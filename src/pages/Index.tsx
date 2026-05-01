@@ -19,8 +19,7 @@ const REVIEWS = [
 const SERVICES = [
   { icon: "Calculator", title: "Математика", desc: "1–11 класс, подготовка к ОГЭ и ЕГЭ", color: "bg-orange-100", border: "border-orange-300", tag: "от 1 200 ₽/час" },
   { icon: "BookOpen", title: "Русский язык", desc: "Грамматика, сочинения, ОГЭ/ЕГЭ", color: "bg-teal-100", border: "border-teal-300", tag: "от 1 200 ₽/час" },
-  { icon: "Globe", title: "Английский язык", desc: "Разговорный, грамматика, школьная программа", color: "bg-pink-100", border: "border-pink-300", tag: "от 1 400 ₽/час" },
-  { icon: "FlaskConical", title: "Физика", desc: "7–11 класс, олимпиадная подготовка", color: "bg-purple-100", border: "border-purple-300", tag: "от 1 300 ₽/час" },
+
 ];
 
 const NAV = [
