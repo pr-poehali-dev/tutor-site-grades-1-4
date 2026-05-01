@@ -111,7 +111,7 @@ export default function Index() {
               <span className="font-caveat text-orange-500">это весело!</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-md">
-              Индивидуальные занятия для детей с 1 по 11 класс. Подготовка к ЕГЭ, ОГЭ и олимпиадам. Онлайн и офлайн.
+              Индивидуальные занятия для детей с 1 по 11 класс. Подготовка к ВПР и олимпиадам. Онлайн и офлайн.
             </p>
             <div className="flex flex-wrap gap-3">
               <a href="#booking"
