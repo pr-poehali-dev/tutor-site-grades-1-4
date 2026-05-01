@@ -151,36 +151,55 @@ export default function Index() {
 
       {/* ABOUT */}
       <section id="about" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative">
-            <div className="absolute -top-6 -left-6 w-full h-full bg-teal-100 rounded-3xl" />
-            <img src={KIDS_IMG} alt="Дети на занятии"
-              className="relative rounded-3xl shadow-xl w-full object-cover" />
-            <div className="absolute -bottom-6 -right-6 bg-orange-500 text-white rounded-2xl p-4 shadow-xl">
-              <div className="font-caveat text-2xl font-bold">Каждый ребёнок</div>
-              <div className="font-caveat text-xl">умеет учиться!</div>
-            </div>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-14">
+            <div className="text-sm font-bold text-teal-600 uppercase tracking-widest mb-3">Наши педагоги</div>
+            <h2 className="text-4xl font-black text-gray-800">Команда <span className="font-caveat text-orange-500">специалистов</span></h2>
           </div>
-          <div>
-            <div className="text-sm font-bold text-teal-600 uppercase tracking-widest mb-3">О педагоге</div>
-            <h2 className="text-4xl font-black text-gray-800 mb-6">
-              Наталья Сергеевна <span className="font-caveat text-orange-500">Румянцева</span>
-            </h2>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Учитель-логопед и воспитатель с опытом более 15 лет в государственных общеобразовательных школах, государственных и частных дошкольных учреждениях. Автор множества авторских игр и методических пособий — победитель конкурса по разработке методических пособий. Мастерски проводит развивающие игры с детьми подготовительных групп, активируя познавательный интерес и готовя к школе.
-            </p>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { icon: "GraduationCap", text: "Учитель-логопед и воспитатель", color: "text-orange-500" },
-                { icon: "Award", text: "Победитель конкурса методических пособий", color: "text-teal-500" },
-                { icon: "BookOpen", text: "Авторские игры и пособия собственной разработки", color: "text-pink-500" },
-                { icon: "Heart", text: "Развитие познавательного интереса у дошкольников", color: "text-purple-500" },
-              ].map(item => (
-                <div key={item.text} className="flex items-start gap-3 bg-gray-50 rounded-2xl p-4">
-                  <Icon name={item.icon} size={20} className={item.color} />
-                  <span className="text-sm font-semibold text-gray-700">{item.text}</span>
-                </div>
-              ))}
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* Румянцева */}
+            <div className="bg-gray-50 rounded-3xl p-8 flex flex-col gap-4">
+              <div>
+                <div className="text-xs font-bold text-teal-600 uppercase tracking-widest mb-1">Учитель-логопед, воспитатель</div>
+                <h3 className="text-2xl font-black text-gray-800">Наталья Сергеевна <span className="font-caveat text-orange-500">Румянцева</span></h3>
+              </div>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                Опыт более 15 лет в государственных общеобразовательных школах и дошкольных учреждениях. Автор авторских развивающих игр и методических пособий. Мастерски готовит детей подготовительных групп к школе, активируя познавательный интерес.
+              </p>
+              <div className="grid grid-cols-1 gap-3">
+                {[
+                  { icon: "Award", text: "Победитель конкурса методических пособий", color: "text-teal-500" },
+                  { icon: "BookOpen", text: "Авторские игры и развивающие пособия", color: "text-pink-500" },
+                  { icon: "Heart", text: "Подготовка к школе для дошкольников", color: "text-purple-500" },
+                ].map(item => (
+                  <div key={item.text} className="flex items-start gap-3 bg-white rounded-2xl p-3">
+                    <Icon name={item.icon} size={18} className={item.color} />
+                    <span className="text-sm font-semibold text-gray-700">{item.text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Фадеева */}
+            <div className="bg-gray-50 rounded-3xl p-8 flex flex-col gap-4">
+              <div>
+                <div className="text-xs font-bold text-orange-500 uppercase tracking-widest mb-1">Учитель начальной школы, 1 категория</div>
+                <h3 className="text-2xl font-black text-gray-800">Марина Борисовна <span className="font-caveat text-orange-500">Фадеева</span></h3>
+              </div>
+              <p className="text-gray-600 leading-relaxed text-sm">
+                Профессиональный учитель начальной школы с 1980 года. Интересно и творчески излагает учебный материал, готовит учеников к ВПР. Автор уроков по истории Санкт-Петербурга, окружающему миру и художественному труду.
+              </p>
+              <div className="grid grid-cols-1 gap-3">
+                {[
+                  { icon: "Award", text: "Победитель конкурса «Звёзды Московского района»", color: "text-orange-500" },
+                  { icon: "BookOpen", text: "Авторские уроки по истории Петербурга и ИЗО", color: "text-teal-500" },
+                  { icon: "GraduationCap", text: "Подготовка к ВПР для учеников начальной школы", color: "text-pink-500" },
+                ].map(item => (
+                  <div key={item.text} className="flex items-start gap-3 bg-white rounded-2xl p-3">
+                    <Icon name={item.icon} size={18} className={item.color} />
+                    <span className="text-sm font-semibold text-gray-700">{item.text}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
