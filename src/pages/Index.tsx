@@ -17,9 +17,11 @@ const REVIEWS = [
 ];
 
 const SERVICES = [
-  { icon: "Calculator", title: "Математика", desc: "1–4 класс, подготовка к ВПР. Офлайн.", color: "bg-orange-100", border: "border-orange-300", tag: "от 1 200 ₽/час" },
-  { icon: "BookOpen", title: "Русский язык", desc: "1–4 класс, подготовка к ВПР. Офлайн.", color: "bg-teal-100", border: "border-teal-300", tag: "от 1 200 ₽/час" },
-
+  { icon: "Calculator", title: "Математика", desc: "1–4 класс, подготовка к ВПР. Офлайн.", color: "bg-orange-100", border: "border-orange-300", group: "Группа 2–3 чел.: от 900 ₽/час", individual: "Индивидуально: от 1 200 ₽/час" },
+  { icon: "BookOpen", title: "Русский язык", desc: "1–4 класс, подготовка к ВПР. Офлайн.", color: "bg-teal-100", border: "border-teal-300", group: "Группа 2–3 чел.: от 900 ₽/час", individual: "Индивидуально: от 1 200 ₽/час" },
+  { icon: "BookMarked", title: "Чтение", desc: "Повышение скорости и осознанности чтения. Офлайн.", color: "bg-pink-100", border: "border-pink-300", group: "Группа 2–3 чел.: от 900 ₽/час", individual: "Индивидуально: от 1 200 ₽/час" },
+  { icon: "PenLine", title: "Коррекция почерка", desc: "Работа над аккуратностью и правильным написанием букв. Офлайн.", color: "bg-purple-100", border: "border-purple-300", group: "Группа 2–3 чел.: от 900 ₽/час", individual: "Индивидуально: от 1 200 ₽/час" },
+  { icon: "School", title: "Подготовка к школе", desc: "Развитие речи, счёт, письмо, внимание и память. Офлайн.", color: "bg-yellow-100", border: "border-yellow-300", group: "Группа 2–3 чел.: от 900 ₽/час", individual: "Индивидуально: от 1 200 ₽/час" },
 ];
 
 const NAV = [
@@ -222,8 +224,13 @@ export default function Index() {
                 </div>
                 <h3 className="text-lg font-black text-gray-800 mb-2">{s.title}</h3>
                 <p className="text-sm text-gray-600 mb-4">{s.desc}</p>
-                <div className="bg-white/70 text-orange-600 font-bold text-sm px-3 py-1 rounded-full inline-block">
-                  {s.tag}
+                <div className="flex flex-col gap-1.5">
+                  <div className="bg-white/70 text-orange-600 font-bold text-xs px-3 py-1 rounded-full inline-block">
+                    👥 {s.group}
+                  </div>
+                  <div className="bg-white/70 text-teal-600 font-bold text-xs px-3 py-1 rounded-full inline-block">
+                    🧑 {s.individual}
+                  </div>
                 </div>
               </div>
             ))}
