@@ -443,6 +443,8 @@ export default function Index() {
                         <span className="bg-white px-2 py-0.5 rounded-full border border-green-200 font-semibold">📱 СБП</span>
                         <span className="bg-white px-2 py-0.5 rounded-full border border-green-200 font-semibold">💳 Сбербанк</span>
                         <span className="bg-white px-2 py-0.5 rounded-full border border-green-200 font-semibold">💵 Наличными</span>
+                        <span className="bg-white px-2 py-0.5 rounded-full border border-green-200 font-semibold">📲 QR-код</span>
+                        <span className="bg-white px-2 py-0.5 rounded-full border border-green-200 font-semibold">🖥️ Терминал</span>
                       </div>
                       <div className="text-xs text-gray-500 mt-1">Первое пробное занятие — бесплатно!</div>
                     </div>
