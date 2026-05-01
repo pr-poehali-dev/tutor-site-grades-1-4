@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1777619162399860594.html"
 	],
 	prefix: "",
 	theme: {
@@ -63,6 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			fontFamily: {
+				nunito: ['Nunito', 'sans-serif'],
+				caveat: ['Caveat', 'cursive'],
+				times: ['"Times New Roman"', 'Times', 'Georgia', 'serif'],
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -88,7 +94,9 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fadeUp 0.6s ease-out forwards',
+				'spin-slow': 'spin-slow 10s linear infinite',
 			}
 		}
 	},
