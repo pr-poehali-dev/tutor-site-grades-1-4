@@ -162,19 +162,19 @@ export default function Index() {
             </div>
           </div>
           <div>
-            <div className="text-sm font-bold text-teal-600 uppercase tracking-widest mb-3">О репетиторе</div>
+            <div className="text-sm font-bold text-teal-600 uppercase tracking-widest mb-3">О педагоге</div>
             <h2 className="text-4xl font-black text-gray-800 mb-6">
-              Анна Сергеевна <span className="font-caveat text-orange-500">Петрова</span>
+              Наталья Сергеевна <span className="font-caveat text-orange-500">Румянцева</span>
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Педагог с высшим образованием и 5+ годами опыта. Специализируюсь на индивидуальном подходе — нахожу способ объяснить любую тему так, чтобы ребёнок понял и полюбил предмет.
+              Учитель-логопед и воспитатель с опытом более 15 лет в государственных общеобразовательных школах, государственных и частных дошкольных учреждениях. Мастерски проводит развивающие игры с детьми подготовительных групп — помогает активировать познавательный интерес и подготовить ребёнка к школе.
             </p>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { icon: "GraduationCap", text: "МГУ, педагогический факультет", color: "text-orange-500" },
-                { icon: "Award", text: "Дипломы олимпиадных победителей", color: "text-teal-500" },
-                { icon: "Users", text: "Работаю онлайн и в Москве", color: "text-pink-500" },
-                { icon: "Heart", text: "Психологически безопасная среда", color: "text-purple-500" },
+                { icon: "GraduationCap", text: "Учитель-логопед и воспитатель", color: "text-orange-500" },
+                { icon: "Award", text: "Опыт более 15 лет", color: "text-teal-500" },
+                { icon: "Users", text: "Школы и ДОУ — государственные и частные", color: "text-pink-500" },
+                { icon: "Heart", text: "Развитие познавательного интереса у дошкольников", color: "text-purple-500" },
               ].map(item => (
                 <div key={item.text} className="flex items-start gap-3 bg-gray-50 rounded-2xl p-4">
                   <Icon name={item.icon} size={20} className={item.color} />
