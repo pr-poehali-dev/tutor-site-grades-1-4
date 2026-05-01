@@ -17,8 +17,8 @@ const REVIEWS = [
 ];
 
 const SERVICES = [
-  { icon: "Calculator", title: "Математика", desc: "1–11 класс, подготовка к ОГЭ и ЕГЭ", color: "bg-orange-100", border: "border-orange-300", tag: "от 1 200 ₽/час" },
-  { icon: "BookOpen", title: "Русский язык", desc: "Грамматика, сочинения, ОГЭ/ЕГЭ", color: "bg-teal-100", border: "border-teal-300", tag: "от 1 200 ₽/час" },
+  { icon: "Calculator", title: "Математика", desc: "1–4 класс, подготовка к ВПР. Офлайн.", color: "bg-orange-100", border: "border-orange-300", tag: "от 1 200 ₽/час" },
+  { icon: "BookOpen", title: "Русский язык", desc: "1–4 класс, подготовка к ВПР. Офлайн.", color: "bg-teal-100", border: "border-teal-300", tag: "от 1 200 ₽/час" },
 
 ];
 
